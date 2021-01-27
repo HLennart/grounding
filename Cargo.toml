@@ -1,0 +1,23 @@
+[package]
+name = "grounding"
+version = "0.1.0"
+authors = ["HLennart <lennart.heggemann@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.38"
+bytemuck = { version = "1.5.0", features = ["derive"] }
+env_logger = "0.8.2"
+image = "0.23.12"
+legion = "0.3.1"
+nalgebra = "0.24.0"
+tokio = { version = "1", features = ["full"] }
+wgpu = "0.6.2"
+winit = "0.24.0"
+
+[build-dependencies]
+shaderc = "0.7.0"
+anyhow = "1.0.38"
+glob = "0.3.0"
